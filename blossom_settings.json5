@@ -1,0 +1,31 @@
+{
+    //Initial learning rate (at the iteration t we have learning_rate(t) = learning_rate / (1 + t/T) where T is #num_iteration/2)
+    "learning_rate": 0.5,
+
+    //The decay function used
+    "decay_function": "asymptotic_decay",
+
+    //Neighborhood function
+    "neighborhood_function": "gaussian",
+
+    //Topology of the map; Possible values: 'rectangular', 'hexagonal'
+    "topology": "rectangular",
+
+    //Distance used to activate the map; Possible values: 'euclidean', 'cosine', 'manhattan', 'chebyshev'
+    "activation_distance": "euclidean", 
+
+    //Random seed to use for reproducibility. Using 1.
+    "random_seed": 1,
+
+    //How many times the SOM should iterate. Was 100000, reduced while experimenting (GL)
+    "num_iteration": 10000,
+
+    //
+    "random_order": "True",
+
+    //
+    "verbose": "True",
+    
+    //Spread of the neighborhood function, needs to be adequate to the dimensions of the map. Use value 0 to automatically calculate to the largest possible value
+    "sigma": 0
+}
